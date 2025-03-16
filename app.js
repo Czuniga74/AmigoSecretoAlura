@@ -1,18 +1,19 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let amigos = [];
 const lista = document.getElementById("listaAmigos");
+const inputAmigo = document.getElementById("amigo");
 
 function agregarAmigo(){
-    let nombreAmigo = document.getElementById("amigo").value;
+    let nombreAmigo = inputAmigo.value.trim();
     
-    if (nombreAmigo == "") {
+    if (nombreAmigo === "") {
         alert("Por favor inserte un nombre")
     }
     else{
         amigos.push(nombreAmigo);
-        amigo.value = "";
-    }
-    actualizarListaAmigos(amigos)   
+        inputAmigo.value = "";
+        actualizarListaAmigos();
+    }    
 }
 
 function actualizarListaAmigos(){    
@@ -26,7 +27,7 @@ function actualizarListaAmigos(){
 }
 
 function sortearAmigo(){    
-    if (amigos.length != 0){
+    if (amigos.length !== 0){
         lista.innerHTML = "";
         let indice = Math.floor(Math.random() * amigos.length);
         const resultado = document.getElementById("resultado");
