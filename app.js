@@ -4,6 +4,7 @@ const lista = document.getElementById("listaAmigos");
 const inputAmigo = document.getElementById("amigo");
 
 function agregarAmigo(){
+    resultado.innerHTML = "";
     let nombreAmigo = inputAmigo.value.trim();
     
     if (nombreAmigo === "") {
@@ -30,7 +31,14 @@ function sortearAmigo(){
     if (amigos.length !== 0){
         lista.innerHTML = "";
         let indice = Math.floor(Math.random() * amigos.length);
-        const resultado = document.getElementById("resultado");
-        resultado.innerHTML = "El amigo secreto es " + amigos[indice];        
+        const resultado = document.getElementById("resultado");        
+        resultado.innerHTML = "El amigo secreto es " + amigos[indice];
+        amigos = [];        
     }
+}
+
+function jugarOtraVez(){
+    amigos = [];
+    resultado.innerHTML = "";
+    lista.innerHTML = "";
 }
