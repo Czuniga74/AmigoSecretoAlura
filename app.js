@@ -12,7 +12,6 @@ function agregarAmigo(){
         amigos.push(nombreAmigo);
         amigo.value = "";
     }
-    console.log(amigos)
     actualizarListaAmigos(amigos)   
 }
 
@@ -31,7 +30,6 @@ function sortearAmigo(){
         lista.innerHTML = "";
         let indice = Math.floor(Math.random() * amigos.length);
         const resultado = document.getElementById("resultado");
-        resultado.innerHTML = "El amigo secreto es " + amigos[indice];
-        
+        resultado.innerHTML = "El amigo secreto es " + amigos[indice];        
     }
 }
