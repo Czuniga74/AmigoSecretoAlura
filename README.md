@@ -2,6 +2,13 @@
   <img src="assets/banner_amigo_secreto.png" alt="Banner" width="600">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-TERMINADO-green">
+  <img src="https://img.shields.io/badge/LICENCIA-ALURA G8-blue">
+  <img src="https://img.shields.io/badge/HECHO EN-MARZO 2025-yellow">
+   </p>
+
+
 <h1 align="center">Adivina quien es tu Amigo Secreto</h1>
 
 <p>Este proyecto en JavaScript te permite agregar amigos a una lista y luego sortear aleatoriamente un "Amigo Secreto".</p>
