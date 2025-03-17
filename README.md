@@ -6,8 +6,7 @@
   <img src="https://img.shields.io/badge/STATUS-TERMINADO-green">
   <img src="https://img.shields.io/badge/LICENCIA-ALURA G8-blue">
   <img src="https://img.shields.io/badge/HECHO EN-MARZO 2025-yellow">
-   </p>
-
+</p>
 
 <h1 align="center">Adivina quien es tu Amigo Secreto</h1>
 
@@ -46,3 +45,16 @@
 - CSS
 
 - JavaScript
+
+<br>
+
+📂 Estructura del Proyecto
+
+<pre style="background-color: black; color: white; padding: 10px; border-radius: 5px;">
+📁 AmigoSecretoAlura
+  │──📁 assets
+  │── README.md
+  │── app.js
+  │── index.html
+  │── style.css
+</pre>
